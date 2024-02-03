@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "5313888a9e3c1c2c941907750607f8fe"
+name = "premium-tax-app"
+application_url = "https://equipment-touched-msgstr-basin.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-store-2023-23.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://equipment-touched-msgstr-basin.trycloudflare.com/auth/callback",
+  "https://equipment-touched-msgstr-basin.trycloudflare.com/auth/shopify/callback",
+  "https://equipment-touched-msgstr-basin.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
